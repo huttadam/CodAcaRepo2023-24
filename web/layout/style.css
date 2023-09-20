@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, body > p {
+    background-color: rgb(25, 249, 33);
+}
+
+h1 {
+    padding: 2rem;
+    border: double brown;
+    border-width: 0.5vw 1vw;
+
+}
+body > p {
+    padding: 1vw 2vw 3vw
+    /* Means % of parent which is the <body> */
+
+    /* padding-top: 2 rem;
+    padding-bottom: 2rem;
+    padding-left:1 rem ;
+    padding-right: 1 rem; */
+}
+
+em, strong{
+    background-color: red;
+   /* display: block; */
+}
+
+.btn {
+    color: white;
+    background-color: rgb(65, 124, 141);
+    font-weight: bold;
+    padding: 1.5rem;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 0.5rem;
+    width:33%;
+    box-sizing: border-box;
+}
+
+.btn img {
+    width: 50%;
+}
+
