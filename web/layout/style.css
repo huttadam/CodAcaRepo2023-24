@@ -1,48 +1,47 @@
-* {
+*{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
 
 
-h1, body > p {
-    background-color: rgb(25, 249, 33);
+h1,body > p {
+    background-color: #dde0e3;
 }
 
 h1 {
-    padding: 2rem;
-    border: double brown;
+    padding: 4rem;
+    border: double red;
     border-width: 0.5vw 1vw;
 
 }
-body > p {
-    padding: 1vw 2vw 3vw
-    /* Means % of parent which is the <body> */
 
-    /* padding-top: 2 rem;
-    padding-bottom: 2rem;
-    padding-left:1 rem ;
-    padding-right: 1 rem; */
+
+
+body > p {
+    padding: 1rem 2rem;
+    margin: 1rem;
+
 }
 
-em, strong{
-    background-color: red;
-   /* display: block; */
+em, strong {
+    background-color: #b2d6ff;
+
 }
 
 .btn {
     color: white;
-    background-color: rgb(65, 124, 141);
+    background-color: #5995da;
     font-weight: bold;
     padding: 1.5rem;
     text-align: center;
     border: 2px solid blue;
+    font-size: 1.5rem;
     border-radius: 0.5rem;
-    width:33%;
-    box-sizing: border-box;
+    width: 200px;
 }
 
-.btn img {
+.btn img{
     width: 50%;
-}
 
+}
