@@ -19,17 +19,28 @@ class Card(db.Model):
 @app.cli.command('db_create')
 def db_create():
     db.drop_all()
+    print("Tables dropped")
     db.create_all()
     print ('Created Tables')
 
 @app.cli.command('db_seed')
 def db_seed():
-    card = Card(
+    card1 = Card(
         title = 'Start the project',
         desription = 'Stage 1 - Creation ERD',
         date_created = date.today()
     )
-    db.session.add(card)
+    db.session.add(card1)
+
+    card2 =Card(
+        title = 'SQLAlchemy and Marshmallow',
+        description = 'Stage 2, integrate both modules in the project',
+        status = "ongoing",
+        priority ="high",
+        date = date.today()
+    )
+    db.session.add(card2)
+    
     db.session.commit()
     print('Database seeded')
 
